@@ -6,9 +6,9 @@ const router = express.Router();
 //router.use(formidable);
 
 cloudinary.config({
-  cloud_name: "dgm5xfx2v",
-  api_key: "542645646891974",
-  api_secret: "vPgRh0sKlLWoGNjFXUUm3a0hmCI",
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
   secure: true,
 });
 
